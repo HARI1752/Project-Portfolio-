@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poopins',sans-serif;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: #080808;
+    color: #fff;
+}
+#about{
+    padding: 80px 0;
+    color: #ababab;
+}
+.row{
+    padding: 80px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.col1{
+    flex-basis: 35%;
+}
+.col1 img{
+    width: 75%;
+    border-radius: 15px;
+}
+.col2{
+    flex-basis: 60%;
+}
+.row2{
+    padding: 80px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.col-1{
+    flex-basis: 35%;
+}
+.col-1 img{
+    width: 75%;
+    border-radius: 15px;
+}
+.col-2{
+    flex-basis: 60%;
+}
+.row3{
+    padding: 80px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.col_1{
+    flex-basis: 35%;
+}
+.col_1 img{
+    width: 75%;
+    border-radius: 15px;
+}
+.col_2{
+    flex-basis: 60%;
+}
+.row4{
+    padding: 80px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.col11{
+    flex-basis: 35%;
+}
+.col22 img{
+    width: 75%;
+    border-radius: 15px;
+}
+.col22{
+    flex-basis: 60%;
+}
+.row5{
+    padding: 80px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.col111{
+    flex-basis: 35%;
+}
+.col111 img{
+    width: 75%;
+    border-radius: 15px;
+}
+.col222{
+    flex-basis: 60%;
+}
+.row6{
+    padding: 80px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.col61{
+    flex-basis: 35%;
+}
+.col62 img{
+    width: 75%;
+    border-radius: 15px;
+}
+.col62{
+    flex-basis: 60%;
+}
+
+@media only screen and (max-width: 600px){
+    #header{
+        background-color: #080808;
+    }
+    .col1, .col2, .col-1, .col-2,.col_1,.col_2,.col11,.col22,.col111,.col222,.col61,.col62{
+        flex-basis: 100%;
+    }
+    .col1,.col-1,.col_1,.col11,.col111,.col61{
+        margin-bottom: 30px;
+    }
+    .col2,.col-2,.col_2,.col22,.col222,.col62{
+        font-size: 14px;
+    }
+    
+    
+
+
+}

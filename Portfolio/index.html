@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/logohk.jpg" type="image/x-icon">
+    <title>HK's Spot</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/774b514238.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="headertext">
+                <p>Mechanical Engineer</p>
+                <h1>I'm <span>Hari</span> <br> Kishore from Chennai</h1>
+            </div>
+        </div>
+
+    </div>
+    <!-------------------abt------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="img/me.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtit">About Me</h1>
+                    <p>In my professional journey, I have consistently demonstrated a strong commitment to continuous learning and skill development. Actively engaging in various training sessions, workshops, and educational programs has been a cornerstone of my approach to professional growth. These sessions have not only equipped me with the latest industry knowledge and best practices but have also allowed me to stay ahead of emerging trends. My proactive approach to professional development through continuous learning underscores my dedication to staying at the forefront of my field and contributing meaningfully to the success of the organizations I serve.</p>
+                  
+                    
+                    <div class="tabtit">
+                        <p class="tablinks active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tablinks" onclick="opentab('education')" >Education</p>
+                    </div>
+                    <div class="tabcontents active-tab" id="skills">
+                        <ul>
+                            <li><span>CAD Modelling</span><br>Designing products</li>
+                            <li><span>Programming</span><br>C,c++</li>
+                            <li><span>Front-End Development</span><br>Web Development</li>
+                        </ul>
+                    </div>
+                    <div class="tabcontents" id="education">
+                        <ul>
+                            <li><span>2018</span><br>X-std with 79%</li>
+                            <li><span>2020</span><br>XII-std with 66%</li>
+                            <li><span>2024</span><br>Engineering with 8.3CGPA</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------- projects----------------->
+    <div id="projects">
+        <div class="container">
+            <h1 class="subtit">Projects</h1>
+            <div class="Projects-list">
+                <div>
+                    <i class="fa-solid fa-bolt"></i>
+                    <h2>Electric bike</h2>
+                    <p>Participating in the SAE ETWDC competition, I led a team to fabricate an electric bike. From design to rigorous testing, our focus was on innovation and sustainability.
+                    </p>
+                    <a href="pro1.html">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-magnet"></i>
+                    <h2>Hybrid Engine</h2>
+                    <p>Presenting an electromagnetic hybrid engine ideology was a captivating endeavor, merging cutting-edge technology with sustainable energy solutions. The goal is to contribute to a cleaner and more efficient future by redefining the conventional notions of hybrid powertrains.
+
+                    </p>
+                    <a href="pro2.html">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-robot"></i>
+                    <h2>Line Follower</h2>
+                    <p>A line follower can have diverse applications, from educational projects to practical industrial use cases. If you faced challenges during the development process, overcoming them likely contributed to your learning and problem-solving skills.
+                    </p>
+                    <a href="pro3.html">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------contact---------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-tit">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>harikishore17052002@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+91 9789898214</p>
+                    <div class="soc-icons">
+                        <a href="https://www.facebook.com/profile.php?id=100016882778742"><i class="fa-brands fa-square-facebook"></i></i></a>
+                        <a href="https://www.instagram.com/___irah___/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://twitter.com/irah1752"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/hari-kishore1752/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/HARI1752"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="img/HariKishore Resume  .pdf" class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email"required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>                
+                        <button type="submit" class="btn btn2" >Submit</button>
+                  </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright © Hari.<i class="fa-solid fa-fire-flame-curved"></i></p>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tablinks")
+        var tabcontents = document.getElementsByClassName("tabcontents")
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link")
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>  
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu")
+
+        function openmenu(){
+            sidemenu.style.right= "0";
+        }
+        function closemenu(){
+            sidemenu.style.right= "-200px";
+        }
+
+
+    </script> 
+    
+</body>
+</html>
